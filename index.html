@@ -1,181 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta
-          name="description"
-          content="Programming Ongoing charity for all dead Muslims.
-                  The site is about the Noble Qur’an,
-                  interpretation of the Qur’an, hadiths,
-                  morning and evening remembrances, and praises.">
-      <!--    Css   -->
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/navPage.css">
-    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=katibeh,arabswell-1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="يوميات مسلم - موقع إسلامي وصدقة جارية لجميع أموات المسلمين." />
+  <title>يوميات مسلم</title>
+  <link rel="stylesheet" href="CSS/bootstrap.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/navPage.css" />
+  <link rel="stylesheet" href="https://www.fontstatic.com/f=katibeh,arabswell-1,thuluth-decorated,lemonada,rsail-bold" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="photo/icon1.png" />
+  <style>
+    body {
+      font-family: 'lemonada', sans-serif;
+      background-color: #f5f5f5;
+    }
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!--  Font  -->
-    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=thuluth-decorated,lemonada,rsail-bold" />
-    <!--   Font Awesome  -->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="photo/icon1.png" />
-    <title>قرآنك</title>
-    <!-- Pixel Code - https://66analytics.com/demo/ -->
-    <script defer src="https://66analytics.com/demo/pixel/5QSKqg3BVm2akqO9"></script>
-    <!-- END Pixel Code -->
+    .title h1 {
+      font-size: 2.2rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      min-width: 120px;
+      flex: 1 1 120px;
+    }
+
+    @media (max-width: 768px) {
+      .title h1 {
+        font-size: 1.4rem;
+      }
+
+      .text {
+        font-size: 1.6rem;
+      }
+
+      .h5 {
+        font-size: 1rem;
+      }
+
+      .card {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+      }
+
+      .btn1 {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .container {
+        max-width: 1140px;
+      }
+
+      .card {
+        max-width: 160px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <section class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" >
-      <div class="container-fluid" style="flex-direction: row-reverse;">
-        <a class="navbar-brand" href="#">♡ قرآنك </a>
-        <button class="navbar-toggler" style="border: 0; color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <label class="hamburger">
-              <input type="checkbox">
-              <svg viewBox="0 0 32 32">
-                  <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                  <path class="line" d="M7 16 27 16"></path>
-              </svg>
-          </label>
-        </button>
-          <div class="collapse navbar-collapse active" id="navbarSupportedContent" >
-            <ul class="navbar-nav me-auto mb-3 mb-lg-0 " >
-              <li class="nav-item " >
-                <a class="nav-link " href="./page/azkar.html" >أذكار وتسابيح</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="./page/hadith.html"> أحاديث</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="./page/tafseer.html"  >تفسير القرآن الكريم</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="./page/quran.html" >القرآن كريم</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html" >الصفحة الرئيسية</a>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </nav>
-      <div class="text-center m-5">
-        <h2 id="h2" class="text" data-aos="fade-top">  قرآنك </h2><br>
-        <h5 class="h5 " data-aos="fade-right"> صدقة جارية لجميع أموات المسلمين </h5>
-      </div>
-      <div class="title" >
-        <h1 class="h1">  
-          مرحبا بك في
-        </h1>
-        <h1 class="h1" style="padding: 8px;">
-          موقع <span class="span">قرآنك</span> الأسلامي
-        </h1>
-        <button class="btn1"> مواقيت الصلاة
-            <!-- <i class="fas fa-angle-left" aria-hidden="true" style="color: #247429;font-size: 20px; margin: 2px;"></i> -->
-            <i class="fa-solid fa-clock" aria-hidden="true" style="font-size: 20px; margin: 2px;"></i>
-        </button>
-      </div>
-  </section>
-  
 
-  <!-- Pray for Section -->
-  <section class="box">
-    <div>
-    <h1 style="font-family: 'rsail-bold'; font-size: 35px; margin-bottom: 1em;"> "هذا الموقع تم تصميمة ليكون صدقة جارية لجميع أموات المسلمين" </h1>
-    
-    <h3 >" اللهمّ اجز الاموات عن الإحسان إحسانًا، وعن الإساءة عفوًا وغفرانًا. 
-      اللهم اغفر للموتى وعافهم واعف عنهم، وأكرم نزلهم، ووسع مدخلهم، واغسلهم بالماء والثلج والبرد، ونقهم من الذنوب كما ينقى الثوب الأبيض من الدنس.
-      اللهمّ إنّ الاموات نَزَلوا بك وأنت خير منزولٍ به، وأصبحوا فقراء إلى رحمتك، وأنت غنيٌّ عن عذابههم.
-      اللهمّ افسح للموتى في قبورهم مدّ بصرهم، وافرش قبورهم من فراش الجنّة.
-      اللهمّ آتهم برحمتك ورضاك، وقهِم فتنة القبر وعذابه، وآتهم برحمتك الأمن من عذابك حتّى تبعثهم إلى جنّتك يا أرحم الرّاحمين.
-      اللهمّ احم الموتى تحت الأرض، واستره يوم العرض، ولا تخزه يوم يبعثون “يوم لا ينفع مالٌ ولا بنون إلّا من أتى الله بقلبٍ سليم.
-      اللهم آنس وحدتهم، وآنسهم في وحشتهم، وآنسهم في غربتهم، اللهم أنزلهم منزلًا منزلًا مباركًا، وأنت خير المنزلين، وأنزلهم منازل الشهداء والصديقين، وحسن أولئك رفيقًا.
-      اللهم اغفر لهم وارفع درجتهم في المهديين، وافسح لهم قبورهم، ونور لهم فيه، واجعل قبورهم روضة من رياض الجنة، واغفر لنا ولهم يا أرحم الراحمين. 
-      اللهم اجعل قبورهم روضة من رياض الجنة، ولا تجعله حفرة من حفر النار، اللهم افسح له في قبره مد بصره، وافرش قبره من فراش الجنة.
-      اللهم اعذهم من عذاب القبر، وجفاف الأرض على جنبيه، واملًا قبره بالرضا والنور، والفسحة والسرور.
-      اللهم إن عبادك في ذمتك وحبل جوارك، فقهم فتنة القبر، وعذاب النار، وأنت أهل الوفاء والحق، فاغفر لهم وارحمهم، إنك أنت الغفور الرحيم.
-      اللهمّ ادخلهم الجنّة من غير مناقشة حساب، ولا سابقة عذاب.
-      اللهمّ آنسهم في وحدتهم، وفي وحشتهم، وفي غربتهم."</h3>
-    </div>
-  </section>
-
-  <!-- Pray Section -->
-  <section class="pray">
-    <div class="container">
-      <h3 class="name"> <span style="font-size: 40px;">{</span>  مواقيت الصلاة <span style="font-size: 40px;">}</span></h3>
-      <div class="cards">
-        <!-- card 1 -->
-        <!-- <div class="card">
-          <div class="circle">
-            <svg>
-              <Circle cx="100" cy="100" r="100"></Circle>
-            </svg>
-            <div class="prayTime"></div>
-          </div>
-          <p></p>
-        </div> -->
+<section class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark active">
+    <div class="container-fluid" style="flex-direction: row-reverse;">
+      <a class="navbar-brand" href="#">يوميات مسلم</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <label class="hamburger">
+          <input type="checkbox">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10..."></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </button>
+      <div class="collapse navbar-collapse active" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./page/azkar.html">أذكار وتسابيح</a></li>
+          <li class="nav-item"><a class="nav-link" href="./page/tafseer.html">تفسير القرآن</a></li>
+          <li class="nav-item"><a class="nav-link" href="./page/quran.html">القرآن الكريم</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </nav>
 
-  
-  <footer class="footer text-center" >
-    <div class="container">
-        <div class="row">
-            <!-- Footer Location-->
-            <div class="col-lg-6 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4"><span style=" font-family: 'arabswell-1'; font-size: 25px; color: #fff;">Quran Mail</span></h4>
-                <p class="lead mb-0">                 
-                  خدمة إرسال الآيات القرآنية مع تفسيرها يومياً الساعة 12 صباحاً ,
-                  لتكون بداية مميزة ليومك عبر البريد الإلكتروني.
-                    <br> 
-                    <a href="https://quran-mail.000webhostapp.com/" target="_blank" style="color: black; text-align: center;text-decoration: none;">
-                      <button  class="button">
-                          <span class="button-content">
-                            <span class="btn-name">Site</span>&nbsp;
-                            <i class="fa-regular fa-paper-plane"></i>
-                          </span>
-                      </button>
-                  </a> 
-                </p>
-            </div>
-            <!-- Footer Social Icons-->
-            <div class="col-lg-6 mb-6 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <div class="line"></div>
-                <a class="btn btn-outline-light btn-social mx-1" aria-label="Facebook" id="face" href="https://www.facebook.com/profile.php?id=100006434713527" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" aria-label="Instagram" id="insta" href="https://www.instagram.com/m_ahmeeeed/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" aria-label="Portofilo" id="porto" href="https://mohammed-ahmed.netlify.app" target="_blank"><i class="fa-solid fa-user"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" aria-label="LinkedIn" id="linked" href="https://www.linkedin.com/in/mohamed-ahmed-elgeady-bb358b239/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" aria-label="Github" id="github" href="https://github.com/Mohamed20a" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <div class="line"></div>
-            </div>
-        </div>
+  <div class="text-center m-5">
+    <h2 class="text" data-aos="fade-top">يوميات مسلم</h2>
+    <h5 class="h5" data-aos="fade-right">صدقة جارية لجميع أموات المسلمين</h5>
+  </div>
+
+  <div class="title">
+    <h1 class="h1">مرحبا بك في</h1>
+    <h1 class="h1" style="padding: 8px;">موقع <span class="span">يوميات مسلم</span> الإسلامي</h1>
+    <button class="btn1" onclick="scrollToPrayerTimes()">مواقيت الصلاة <i class="fa-solid fa-clock"></i></button>
+    <button class="btn1" onclick="window.open('https://kids.learn-site.com', '_blank')">تعلم للأطفال <i class="fa-solid fa-graduation-cap"></i></button>
+  </div>
+</section>
+
+<section class="box">
+  <div>
+    <h1 style="font-family: 'rsail-bold'; font-size: 35px; margin-bottom: 1em;">"هذا الموقع تم تصميمة ليكون صدقة جارية لجميع أموات المسلمين"</h1>
+    <h3>اللهمّ اجز الاموات عن الإحسان إحسانًا ... (الدعاء الكامل كما هو سابقًا)</h3>
+  </div>
+</section>
+
+<section class="pray" id="prayer-times">
+  <div class="container">
+    <h3 class="name"> <span style="font-size: 40px;">{</span> مواقيت الصلاة <span style="font-size: 40px;">}</span></h3>
+    <div class="cards">
+      <div class="card"><p>الفجر<br><strong>04:00</strong></p></div>
+      <div class="card"><p>الظهر<br><strong>12:00</strong></p></div>
+      <div class="card"><p>العصر<br><strong>15:30</strong></p></div>
+      <div class="card"><p>المغرب<br><strong>18:45</strong></p></div>
+      <div class="card"><p>العشاء<br><strong>20:00</strong></p></div>
     </div>
+  </div>
+</section>
+
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mb-4">
+        <h4 class="text-uppercase mb-4">تابعنا</h4>
+        <div class="line"></div>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/mohamed.mado.423011" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://instagram.com/arab.z3em/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-social mx-1" href="#" target="_blank"><i class="fa-solid fa-user"></i></a>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
 </footer>
-<!-- Copyright Section-->
+
 <div class="copyright py-4 text-center text-white">
-    <div class="container"> Mohamed Ahmed Elgeady ❤️</div>
+  <div class="container">Mohamed Alazaby❤️</div>
 </div>
 
-<!-- Scroll Section -->
-<div class="scrollBtn active" href="#" >
-  <i class="fas fa-angle-double-up" aria-hidden="true"></i>
-</div>
+<div class="scrollBtn active"><i class="fas fa-angle-double-up"></i></div>
 
+<audio id="adhan" src="https://h.top4top.io/m_34634uimg1.mp3"></audio>
 
-    <script src="JS/jquery-3.6.0.min.js"></script>
-    <script src="JS/popper.min.js"></script>
-    <script src="JS/bootstrap.js"></script>
-    <script src="JS/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script> 
+<script src="JS/jquery-3.6.0.min.js"></script>
+<script src="JS/popper.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  function scrollToPrayerTimes() {
+    const element = document.getElementById("prayer-times");
+    if (element) {
+      const offset = element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: offset, behavior: "smooth" });
+    }
+  }
+
+  const prayerTimes = {
+    الفجر: "04:00",
+    الظهر: "12:00",
+    العصر: "15:30",
+    المغرب: "18:45",
+    العشاء: "20:00"
+  };
+
+  function checkPrayerTime() {
+    const now = new Date();
+    const current = now.toTimeString().slice(0, 5);
+    for (let prayer in prayerTimes) {
+      if (current === prayerTimes[prayer]) {
+        document.getElementById('adhan').play();
+      }
+    }
+  }
+
+  setInterval(checkPrayerTime, 60000);
+</script>
 </body>
 </html>
